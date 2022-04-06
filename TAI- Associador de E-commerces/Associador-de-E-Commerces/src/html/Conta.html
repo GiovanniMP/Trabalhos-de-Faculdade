@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+            rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/7b49d66dbc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script>
+        function ShowProfile(){
+                document.getElementById("profile-section").style.display = "block";
+                document.getElementById("ecommerce-section").style.display = "none";
+                document.getElementById("productCreate-section").style.display = "none";
+                document.getElementById("productList-section").style.display = "none";
+                document.getElementById("coupon-section").style.display = "none"; 
+            }
+        function ShowEcommerce(){
+                document.getElementById("ecommerce-section").style.display = "block";
+                document.getElementById("profile-section").style.display = "none";
+                document.getElementById("productCreate-section").style.display = "none";
+                document.getElementById("productList-section").style.display = "none";
+                document.getElementById("coupon-section").style.display = "none"; 
+            }
+        function ShowProducts(){
+                document.getElementById("productCreate-section").style.display = "block";
+                document.getElementById("ecommerce-section").style.display = "none";
+                document.getElementById("profile-section").style.display = "none";
+                document.getElementById("productList-section").style.display = "none";
+                document.getElementById("coupon-section").style.display = "none";  
+            }
+        function ListProducts(){
+                document.getElementById("productList-section").style.display = "block";
+                document.getElementById("productCreate-section").style.display = "none";
+                document.getElementById("ecommerce-section").style.display = "none";
+                document.getElementById("profile-section").style.display = "none";
+                document.getElementById("coupon-section").style.display = "none";  
+            }
+        function showCoupon(){
+                document.getElementById("productList-section").style.display = "none";
+                document.getElementById("productCreate-section").style.display = "none";
+                document.getElementById("ecommerce-section").style.display = "none";
+                document.getElementById("profile-section").style.display = "none"; 
+                document.getElementById("coupon-section").style.display = "block"; 
+            }
+    </script>
+    <script type="text/javascript">
+        $("#ecom-cnpj").mask("00.000.000/0000-00");
+    </script>
+    <script type="text/javascript">
+        $("#ecom-tel").mask("(00)00000-00000");
+    </script>
+    <title>E-mall | Conta</title>
+
+    <style> 
+        .bg-yellow{
+            background: #e8d38a;
+        }
+        .bg-softyellow{
+            background: #eae7dc;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-top">
+    <nav class="navbar bg-yellow">
+        <div class="container-fluid">
+        <a class="navbar-brand" style="color: #222222" href="../../index.html"><img src="../img/logoN.png" style="height: 2.5rem;"></a>
+        <span class="navbar-brand mb-0 h1">Configurações de Conta</span>
+        </div>
+    </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid ">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ShowProfile()" aria-current="page" href="#"style="color: #EAEDED">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ShowEcommerce()" href="#"style="color: #EAEDED">Cadastrar E-commerce</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ShowProducts()" href="#"style="color: #EAEDED">Cadastrar Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="ListProducts()" href="#"style="color: #EAEDED">Seus Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showCoupon()" href="#"style="color: #EAEDED">Cadastrar Cupom</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Seção Perfil-->
+    <section id="profile-section" style="display: display;height: 100vh; width: 100%; background-color: #EAEDED">
+        <div class="container border" style="width: 50rem;margin-top: 7.5rem;background-color: #e8d38a;">
+            <h3 class="mt-2">Edite seus dados</h3>
+            <hr class="mb-5">
+            <div class="input-group mb-3 mt-3">
+                <input type="text" class="form-control" placeholder="" value="NomeUsuario" style="background-color: #eae7dc">
+                <button class="btn btn-secondary" type="button" id="btn-edit-nome"><i class="fas fa-edit"></i></button>
+              </div>
+            <div class="input-group mb-3 mt-3">
+                <input type="text" class="form-control" placeholder="" value="SenhaConta" style="background-color: #eae7dc">
+                <button class="btn btn-secondary" type="button" id="btn-edit-nome"><i class="fas fa-edit"></i></button>
+              </div>
+            <div class="input-group mb-3 mt-3">
+                <input type="text" class="form-control" placeholder="" value="ConfirmarSenha" style="background-color: #eae7dc">
+                <button class="btn btn-secondary" type="button" id="btn-edit-nome"><i class="fas fa-edit"></i></button>
+              </div>
+        </div>   
+    </section>
+    <!-- Seção Ecommerce -->
+    <section id="ecommerce-section" style="display: none;height: 100vh; width: 100%; background-color: #EAEDED">
+        <form class="container justify-content-center border " style="width: 50rem ;margin-top: 7.5rem; background-color: #e8d38a;">
+            <div id="cadastro-ecommerce">
+                <h2>Cadastre seu E-commerce</h2>
+                <hr class="mb-5">
+                <label for="ecom-nome" class="form-label ">Nome do Ecommerce</label>
+                <input type="text" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="ecom-nome" >
+                <label for="ecom-cnpj" class="form-label">CNPJ do Ecommerce</label>
+                <input type="text" required class="form-control shadow-none" name="ecom-cnpj" placeholder="99.999.999/9999-99" style="border-color: grey;background-color: #eae7dc;" id="ecom-cnpj" >
+                <label for="ecom-site" class="form-label">Informe o site do seu Ecommerce</label>
+                <input type="url" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="ecom-link" >
+                <label for="ecom-email" class="form-label shadow-none">Informe o email do Ecommerce</label>
+                <input type="email" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="ecom-email" >
+                <label for="ecom-tel" required class="form-label">Telefone</label>
+                <input type="tel" class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="ecom-tel">
+                <label for="ecom-img" class="form-label">Logo do Ecommerce (Link)</label>
+                <input type="url" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="ecom-img"> 
+                <label for="ecom-text" class="form-label">Descreva o Ecommerce para os clientes</label>
+                <textarea required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="ecom-desc"></textarea>             
+                <button type="submit" class="btn btn-secondary shadow-none mt-3 mb-2" onclick="validaCadastroEcommerce()">Registrar</button>
+            </div>
+        </form>   
+    </section>
+    <!-- Seção Cadastrar Produtos -->
+    <section id="productCreate-section" style="display: none;height: 100vh; width: 100%; background-color: #EAEDED">
+        <form class="container justify-content-center border" style="width: 50rem ;margin-top: 7.5rem; background-color: #e8d38a;">
+            <div id="cadastro-produtos">
+                <h2>Cadastre seus produtos</h2>
+                <hr class="mb-5">
+                <label for="prod-title" class="form-label ">Nome do produto</label>
+                <input type="text" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="prod-title" >
+                <label for="prod-price" class="form-label">Preço</label>
+                <input type="text" required class="form-control shadow-none" placeholder="R$9999.99" style="border-color: grey;background-color: #eae7dc;" id="prod-price" >
+                <label for="prod-desc" class="form-label">Descrição do produto</label>
+                <input type="text" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="prod-desc" >
+                <label for="prod-link" class="form-label shadow-none">Link do produto</label>
+                <input type="url" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="prod-link" >
+                <label for="prod-img" required class="form-label">Imagem do produto</label>
+                <input type="url" class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="prod-img">
+                <label for="prod-tag" class="form-label">Tag para seu produto</label>
+                <input type="text" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="prod-tag">     
+                <button type="submit" class="btn btn-secondary shadow-none mt-3 mb-2" onclick="validaCadastroProdutos()">Registrar</button>
+            </div>
+        </form>
+    </section>
+    <!-- Seção Listar produtos Cadastrados -->
+    <section id="productList-section" style="display: none;height: 100vh; width: 100%; background-color: #EAEDED">
+        <div class="container justify-content-center border" style="width: 200rem ;margin-top: 7.5rem; background-color: #e8d38a;">
+                <h2>Produtos Cadastrados</h2>
+                <hr class="mb-5">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Descrição</th>
+                        <th scope="col">Tags</th>
+                        <th scope="col">Editar</th>
+                    </tr>
+                    </thead>
+                    <tbody class="listaProdutos">
+
+                    </tbody>
+                </table>
+        </div>
+    </section>
+    <!-- Seção Cadastrar Cupom -->
+    <section id="coupon-section" style="display: none;height: 100vh; width: 100%; background-color: #EAEDED">
+        <form class="container justify-content-center border" style="width: 50rem ;margin-top: 7.5rem; background-color: #e8d38a;">
+            <div id="cadastro-ecommerce">
+                <h2>Cadastre seus cupons</h2>
+                <hr class="mb-5">
+                <label for="cupom-nome" class="form-label ">Nome do cupom</label>
+                <input type="text" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="cupom-nome" >
+                <label for="cupom-imagem" class="form-label">Imagem (Link da imagem)</label>
+                <input type="url" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="cupom-imagem" >
+                <label for="cupom-desc" class="form-label">Descrição do cupom</label>
+                <input type="text" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="cupom-desc" >
+                <label for="cupom-cod" class="form-label shadow-none">Código do cupom</label>
+                <input type="text" required class="form-control shadow-none" style="border-color: grey;background-color: #eae7dc;" id="cupom-cod" >       
+                <button type="submit" class="btn btn-secondary shadow-none mt-3 mb-2" onclick="validaCadastroCupom()">Registrar</button>
+            </div>
+        </form>   
+    </section>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

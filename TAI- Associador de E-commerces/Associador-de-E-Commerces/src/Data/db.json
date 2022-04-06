@@ -1,0 +1,123 @@
+{
+  "ecommerces": [
+    {
+      "id": 1,
+      "name": "Dafiti",
+      "cnpj": "51.544.544/5444-44",
+      "link": "dafiti.com.br",
+      "email": "dafiti@gmail.com",
+      "phone": "(35)9 9999-9999",
+      "image": "",
+      "desc": "loja dafiti..."
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Giovanni M Pereira",
+      "username": "GiovanniMP",
+      "email": "giovanni@gmail.com",
+      "birthdate": "2000/01/19",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "Carlos",
+      "username": "Carlos11",
+      "email": "carlos@gmail.com",
+      "birthdate": "2021-05-05",
+      "password": "123"
+    }
+  ],
+  "coupons": [
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "image": "./src/img/cupom.png",
+      "desc": "Cupom de 10% de desconto para camisetas brancas.",
+      "cod": "10OFFWHITE"
+    },
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "image": "./src/img/cupom.png",
+      "desc": "Cupom de 10% de desconto para camisetas brancas.",
+      "cod": "10OFFWHITE"
+    },
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "image": "./src/img/cupom.png",
+      "desc": "Cupom de 10% de desconto para camisetas brancas.",
+      "cod": "10OFFWHITE"
+    },
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "image": "./src/img/cupom.png",
+      "desc": "Cupom de 10% de desconto para camisetas brancas.",
+      "cod": "10OFFWHITE"
+    },
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "image": "./src/img/cupom.png",
+      "desc": "Cupom de 10% de desconto para camisetas brancas.",
+      "cod": "10OFFWHITE"
+    },
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "image": "./src/img/cupom.png",
+      "desc": "Cupom de 10% de desconto para camisetas brancas.",
+      "cod": "10OFFWHITE"
+    },
+    {
+      "id": 1,
+      "title": "10% OFF",
+      "image": "./src/img/cupom.png",
+      "desc": "Cupom de 10% de desconto para camisetas brancas.",
+      "cod": "10OFFWHITE"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Camiseta Branca",
+      "price": "85.90",
+      "desc": "Uma camiseta branca normal.",
+      "link": "https://www.riachuelo.com.br/camiseta-basica-12292605_sku?gclid=Cj0KCQjwh_eFBhDZARIsALHjIKfzh3LASehIahKMBGAvJZSORD5ViKSf1lwU95SMeybtWsbhSWdNpGUaAg-LEALw_wcB",
+      "image": "./src/img/camisetaTeste.png",
+      "tags": [
+        "camiseta",
+        "branca",
+        "camisetas"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Camiseta Branca Barata",
+      "price": "49.90",
+      "desc": "Uma camiseta branca mais em conta.",
+      "link": "https://www.riachuelo.com.br/camiseta-basica-12292605_sku?gclid=Cj0KCQjwh_eFBhDZARIsALHjIKfzh3LASehIahKMBGAvJZSORD5ViKSf1lwU95SMeybtWsbhSWdNpGUaAg-LEALw_wcB",
+      "image": "./src/img/camisetaTeste.png",
+      "tags": [
+        "camiseta",
+        "branca",
+        "camisetas"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Calça Jeans",
+      "price": "199,90",
+      "desc": "Calça jeans simples",
+      "link": "https://www.riachuelo.com.br/calca-jeans-color-12286532_sku?gclid=Cj0KCQjwhr2FBhDbARIsACjwLo2J7lCWYX7h7hYkw2LYVFRoQ1KH5LQHfZSF-jhdvuRytuCBzLqfd70aAvEPEALw_wcB",
+      "image": "./src/img/jeans.png",
+      "tags": [
+        "calça",
+        "calca"
+      ]
+    }
+  ]
+}
